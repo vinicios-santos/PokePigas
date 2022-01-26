@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+body{
+    background-color: #003a70;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+header img{
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    filter: drop-shadow(2px 4px 6px black) hue-rotate(0deg);
+
+}
+#cabecalho{
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    border: 0;
+    background-color: #012d57;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.content{
+    text-align: left;
+    width: 70%;
+    height: 100%;
+    background-color: #003a70;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+    min-height: 900px;
+    position: relative; 
+
+}
+.content img{
+    width: auto;
+    height: auto;
+    max-width: 600px;
+}
+footer{ 
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(#003a70, black);
+    background-color: #CC0000;
+    padding-top: 1%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto; 
+
+}
+footer img{
+    padding-top: 2px;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+}
+.pokeInfo{
+    background: radial-gradient(rgb(63, 63, 63), #222);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 240px;
+    float: left;
+    text-align: center;
+    margin: 13px;
+}
+#pokeInformations{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.pokeInfo:hover{
+    background: radial-gradient(#aad9fd, #5db9ff);
+    background-color: #5db9ff;
+    color: white;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+#loading {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+.spritePoke{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 50%;
+    min-width: 250px;    
+}
+.spritePoke img{
+    width: auto;
+    height: auto;
+    max-width: 215px;
+    max-height: 215px;
+    height: 100%;
+    padding:30px;
+    vertical-align: middle;
+    align-self: center;
+}
+.abilityPoke{
+    width: 50%;
+    text-align: center;
+    padding: 30px 0;
+    min-width: 250px;
+}
+
+.onclickPoke{
+    background: radial-gradient(rgb(63, 63, 63), #222);
+    display: flex;
+    /* flex-flow: wrap; */
+    width: 70%;
+    margin: 0 auto;
+    min-width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .onclickPoke{
+        display: block;
+        min-width: 240px;
+    }    
+    .spritePoke{
+        width: 100%;
+    }
+    .abilityPoke{
+        width: 100%;            
+    }
+    .spritePoke img{
+        height: inherit;
+        /* width: 215px; */
+        height: 215px;
+    }
+        
+}
+button{
+    background-color: #5db9ff;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #ffcb05;
+    cursor:pointer;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #5db9ff;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffcb05;
+  }
+  #pokeName{
+      height: 30px;
+      width: 70%;
+      background-color: #222;
+      color: white;
+      border: 2px solid #012d57;
+  }
+  #inputTitulo{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+  #pokebusca{
+      background-image:url(download.png) no-repeat;
+      cursor:pointer;
+      width: 200px;
+      height: 100px;
+      border: none;
+  }
+#hrefPokemons{
+    background-color: #5db9ff;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#hrefIndex{
+    background-color: #5db9ff; 
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#hrefIndex:hover{
+    background-color: #ffcb05;
+    cursor:pointer;
+}
+#imgVoltar{
+    height: 40px;
+    width: 40px;
+}
+#h1PokeIndex{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.contentIndex{
+    display: grid;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom:  400px;
+    padding-top:203.5px;
+}
+.contentCreate{
+    text-align: left;
+    width: 70%;
+    min-height: 100%;
+    background-color: #003a70;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 16px;
+    min-height: 900px;
+    position: relative; 
+}
+#hrefIndex{
+    margin-bottom: 20px;
+}
+#h1PokeFav{
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+@media screen and (min-width: 1920px){
+    #footerIndex{
+        position: absolute;
+        bottom: 0;
+        
+    }
+} 
+.pokeCreate{
+        background: radial-gradient(rgb(63, 63, 63), #222);
+         color: white;
+         font-size: 18px;
+         border-radius: 5px;
+         width: 240px;
+         float: left;
+         text-align: center;
+         margin: 13px;   
+}
+.pokeCreate img{
+    height: auto;
+    width: auto;
+    max-height: 100px;
+    max-height: 100px;
+}
+.pokeCreate input{
+        background-color: #5db9ff; 
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 5px;
+        padding: 2px 2px 2px 2px;
+    }
+.pokeCreate input:hover{
+        background-color: #ffcb05;
+        cursor:pointer;
+}
+#formPokemon{
+    font-size: 26px;
+    text-align: left;
+    width: 70%;
+    background-color: #003a70;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    position: relative;  
+
+}
+#formPokemon input{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+#nome input{
+    width: 100%;
+}
+#insereCreate{
+    background-color: #5db9ff; 
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+#insereCreate:hover{
+    background-color: #ffcb05;
+    cursor:pointer;
+}
+
+input#nome{
+    width: 100%;
+    background-color: #222;
+    border: none;
+    height: 40px;
+    font-size: 22px;
+    color: azure;
+
+}
+input#habilidade{
+    width: 100%;
+    background-color: #222;
+    border: none;
+    height: 40px;
+    font-size: 22px;
+    color: azure;
+
+}
+input#peso{
+    width: 100%;
+    background-color: #222;
+    border: none;
+    height: 40px;
+    font-size: 22px;
+    color: azure;
+}
+input#tipo{
+    width: 100%;
+    background-color: #222;
+    border: none;
+    height: 40px;
+    font-size: 22px;
+    color: azure;
+}
+input#img{
+    width: 100%;
+    background-color: #222;
+    border: none;
+    height: 40px;
+    font-size: 22px;
+    color: azure;
+
+}
+#listaPokemon{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+#listaPokemon input{
+    padding-bottom: 5px;
+    border: 3px solid #222;
+}
+.pokeCreate p{
+    font-size: 28px;
+}
+.pokeCreate h2{
+    font-weight: bold;
+}
+#listaPokemon div{
+    width: 300px;
+}
+#pokemonsCriados{
+    text-align: center;
+}
